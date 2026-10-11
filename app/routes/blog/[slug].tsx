@@ -62,7 +62,7 @@ export default createRoute(
                       {post.metadata.tags?.map((tag) => (
                         <LinkBadge
                           link={`/tag/${tag}`}
-                          label={tags[tag].name}
+                          label={tags[tag]?.name ?? tag}
                         />
                       ))}
                     </div>
